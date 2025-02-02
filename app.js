@@ -83,12 +83,12 @@ function sortearAmigo() {
     let indiceSorteado =  Math.floor(Math.random() * contadorAmigos) + 1;
     let amigoSorteado = nominaAmigos[indiceSorteado -1]
     console.log('amigoSorteado: ' + amigoSorteado);
-    // alert('Ahora va a anunciar el amigo sorteado');
-    document.querySelector('#listaAmigos').amigoSorteado = '';
-    document.getElementById('listaAmigos').innerHTML = amigoSorteado;
-    // document.getElementById('resultado').innerHTML = amigoSorteado; //
-    // document.querySelector('#resultado').value = amigoSorteado; //
-    condicionesIniciales();
+    // alert('Ahora va a anunciar el amigo sorteado'); //
+    // document.querySelector('#listaAmigos').amigoSorteado = ''; //
+    // document.getElementById('listaAmigos').innerHTML = amigoSorteado; //
+    document.querySelector('#resultado').value = amigoSorteado;
+    document.getElementById('resultado').innerHTML = amigoSorteado;
+        condicionesIniciales();
 }
 
 condicionesIniciales();
